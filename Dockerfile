@@ -21,9 +21,8 @@ RUN echo @testing http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repo
     apk add --no-cache bash 
 
 
-#RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
-#  && CONFIG="\
-RUN CONFIG="\
+RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
+  && CONFIG="\
     --prefix=/etc/nginx \
     --sbin-path=/usr/sbin/nginx \
     --modules-path=/usr/lib/nginx/modules \

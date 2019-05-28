@@ -232,7 +232,7 @@ RUN echo @testing http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repo
     mkdir -p /data/phpjieba/dict && \ 
     curl -sLfS -o /tmp/ImageMagick.tar.gz http://www.imagemagick.org/download/ImageMagick.tar.gz && \
     /usr/bin/tar -xzvf /tmp/ImageMagick.tar.gz -C /tmp && \
-    cd /tmp/ImageMagick-7.0.8-46 && \
+    cd /tmp/ImageMagick-7.0.8-47 && \
     ./configure --prefix=/usr/local/imagemagick --disable-dependency-tracking && \
     cd config/ && sed -i s#/usr/bin/sh#/bin/sh#g install-sh && \
     cd .. && make && make install && \
@@ -242,7 +242,7 @@ RUN echo @testing http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repo
     cd /tmp/imagick-3.4.3RC3 && phpize && \
     ./configure --with-php-config=/usr/local/bin/php-config --with-imagick=/usr/local/imagemagick && \
     make && make install && \
-    rm -f /tmp/ImageMagick.tar.gz && rm -f /tmp/imagick-3.4.3RC3.tgz && rm -fr /tmp/ImageMagick-7.0.8-46 && rm -rf /tmp/imagick-3.4.3RC3
+    rm -f /tmp/ImageMagick.tar.gz && rm -f /tmp/imagick-3.4.3RC3.tgz && rm -fr /tmp/ImageMagick-7.0.8-47 && rm -rf /tmp/imagick-3.4.3RC3
  
    
     

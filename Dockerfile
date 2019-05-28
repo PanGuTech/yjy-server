@@ -212,6 +212,7 @@ RUN echo @testing http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repo
     mkdir -p /run/nginx && \
     mkdir -p /data/share/data && \
     mkdir -p /var/log/supervisor && \
+    mkdir -p /data/yii_core && \
     pip install -U pip && \
     pip install -U certbot && \
     rm -Rf /etc/nginx/nginx.conf && \
